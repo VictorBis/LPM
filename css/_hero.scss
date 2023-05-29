@@ -1,0 +1,30 @@
+.hero{
+    padding: 1.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1{
+        margin-bottom: 2rem;
+    }
+
+    & img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 780px){
+    .hero{
+        & h1{
+            margin-bottom: 5rem;
+        }
+        & img{
+            width: auto;
+        }
+    }
+}

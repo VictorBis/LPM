@@ -1,0 +1,16 @@
+body {
+    font-family: helvetica, sans-serif;
+    color: #000000;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  /* Tablet */
+
+@media screen and (min-width: 780px){
+    h1{
+        font-size: 3rem;
+    }
+}
