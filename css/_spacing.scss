@@ -1,0 +1,25 @@
+:root{
+    --spacing-xsmall: 0.5rem;
+    --spacing-small: 1rem;
+    --spacing-medium: 1.5rem;
+    --spacing-large: 2rem;
+    --spacing-xlarge: 2.5rem;
+    --spacing-xxlrge: 3rem;
+    --spacing-xxxlarge: 3.5rem;
+    --spacing-xxxxlarge: 2.5rem;
+  }
+  
+  
+   /* Tablet */
+  @media screen and (min-width: 760px){
+  }
+  
+  /* Dektop */
+  @media screen and (min-width: 1200px){
+    :root{
+      --spacing-xlarge: 3rem;
+      --spacing-xxlarge: 3.5rem;
+      --spacing-xxxlarge: 4rem;
+      --spacing-xxxxlarge: 6.5rem;
+    }
+  }

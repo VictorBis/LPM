@@ -1,0 +1,15 @@
+/* Colors */
+:root{
+    --paz: #FFFFFF;
+    --niebla: #F6F6F4;
+    --noche: #0B0B0B;
+    --vida: #CCCF31;
+    --pistache: #E4E59E;
+    --espacio: #E5E5E4;
+    --grafito: #4E4D51;
+}
+
+body{
+    color: var(--noche);
+    background-color: var(--paz);
+}
