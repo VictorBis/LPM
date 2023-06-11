@@ -10,9 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 1rem;
 }
 
+/* Tablet */
 :root {
   --small: 0.75rem;
   --body: 1rem;
@@ -149,9 +149,6 @@ a {
 a:hover {
   color: var(--dignidad);
 }
-a:visited {
-  color: var(--cielo);
-}
 
 /* Botones */
 .ghost {
@@ -176,9 +173,6 @@ a:visited {
   height: 100%;
   left: calc(var(--shift-distance) * -4.5);
   transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease, background-position 0.3s ease;
-}
-.ghost:visited {
-  color: var(--noche);
 }
 .ghost::before {
   content: "";
@@ -222,5 +216,31 @@ a:visited {
   }
   .hero img {
     width: auto;
+  }
+}
+.event-banner-container {
+  background-color: var(--pistache);
+}
+
+.event-banner {
+  padding: 1rem;
+  background-color: var(--pistache);
+}
+.event-banner a {
+  margin-top: 0.5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .event-banner {
+    padding: 1.5rem;
+  }
+}
+/* Dektop */
+@media screen and (min-width: 1200px) {
+  .event-banner {
+    max-width: 1440px;
+    padding: 1.5rem 4rem;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=styles.css.map */

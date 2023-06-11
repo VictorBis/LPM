@@ -5,9 +5,6 @@ a{
     &:hover{
         color: var(--dignidad);
     }
-    &:visited{
-        color: var(--cielo);   
-    }
 }
 
 /* Botones */
@@ -33,9 +30,6 @@ a{
             left: calc(var(--shift-distance)*-4.5);
             transition: left .3s cubic-bezier(.4,1.7,.7,.8),right .3s ease,background-position .3s ease;
         }
-    }
-    &:visited{
-        color: var(--noche);
     }
     &::before{
         content: "";
