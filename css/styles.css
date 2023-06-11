@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+main {
+  flex-grow: 1;
+}
+
 :root {
   --small: 0.75rem;
   --body: 1rem;
@@ -280,6 +284,10 @@ a:hover {
 }
 .event-banner a {
   margin-top: 0.5rem;
+}
+.event-banner p {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 /* Tablet */
