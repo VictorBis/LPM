@@ -75,7 +75,7 @@ body {
 .xlarge {
   font-family: "Baskervville", serif;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: var(--xlarge);
   max-width: 40ch;
 }
@@ -263,6 +263,11 @@ a:hover {
 }
 
 /* Tablet */
+@media screen and (min-width: 560px) {
+  .hero-img .img-container img {
+    max-width: 40%;
+  }
+}
 /* Desktop */
 @media screen and (min-width: 1000px) {
   .hero-title {
