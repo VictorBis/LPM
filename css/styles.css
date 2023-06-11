@@ -48,6 +48,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: var(--body);
+  max-width: 75ch;
 }
 
 .medium-bold {
@@ -76,6 +77,7 @@ body {
   font-weight: 400;
   line-height: 1.1;
   font-size: var(--xlarge);
+  max-width: 40ch;
 }
 
 .xxlarge {
@@ -141,6 +143,23 @@ a:hover {
 .primary-btn:hover {
   background-color: var(--grafito);
   color: var(--paz);
+}
+
+.primary-btn-alt {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  background-color: var(--paz);
+  color: var(--noche);
+  text-decoration: none;
+  border-radius: 40px;
+  margin-top: var(--spacing-medium);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.primary-btn-alt:hover {
+  background-color: var(--niebla);
+  color: var(--noche);
 }
 
 .secondary-btn {
@@ -451,10 +470,17 @@ header.black {
 }
 .section-container.dark {
   background-color: var(--noche);
+  color: var(--paz);
 }
 
 .section {
   padding: 1rem;
+}
+.section .full-width {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 /* Tablet */
@@ -478,6 +504,15 @@ header.black {
   }
   .section .half-column-2 {
     grid-column: 7/13;
+  }
+  .section .full-width {
+    grid-column: 3/11;
+    text-align: center;
+  }
+  .section .full-width.last-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -552,6 +587,31 @@ header.black {
     margin-top: var(--spacing-xxlarge);
   }
 }
+footer {
+  padding: var(--spacing-large) 1rem;
+  background-color: var(--niebla);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .common-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-medium);
+}
+footer .common-links .footer-logo {
+  margin-bottom: var(--spacing-small);
+}
+footer .common-links .socials {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+footer .common-links .socials .twitter-logo {
+  margin-right: 1.5rem;
+}
+
 :root {
   --spacing-xsmall: 0.5rem;
   --spacing-small: 1rem;
@@ -560,7 +620,7 @@ header.black {
   --spacing-xlarge: 2.5rem;
   --spacing-xxlrge: 3rem;
   --spacing-xxxlarge: 3.5rem;
-  --spacing-xxxxlarge: 2.5rem;
+  --spacing-xxxxlarge: 3rem;
 }
 
 .padding-xxxxlarge {

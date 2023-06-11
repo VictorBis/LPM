@@ -1,0 +1,25 @@
+footer{
+    padding: var(--spacing-large) 1rem;
+    background-color: var(--niebla);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .common-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--spacing-medium);
+        & .footer-logo{
+            margin-bottom: var(--spacing-small);
+        }
+        & .socials{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            & .twitter-logo{
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
