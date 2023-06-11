@@ -12,7 +12,6 @@ body {
   position: relative;
 }
 
-/* Tablet */
 :root {
   --small: 0.75rem;
   --body: 1rem;
@@ -143,23 +142,6 @@ a:hover {
 .primary-btn:hover {
   background-color: var(--grafito);
   color: var(--paz);
-}
-
-.primary-btn-alt {
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1rem 1.5rem;
-  background-color: var(--paz);
-  color: var(--noche);
-  text-decoration: none;
-  border-radius: 40px;
-  margin-top: var(--spacing-medium);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.primary-btn-alt:hover {
-  background-color: var(--niebla);
-  color: var(--noche);
 }
 
 .secondary-btn {
@@ -320,7 +302,7 @@ header {
 header.white {
   background-color: var(--paz);
 }
-header.black {
+header.dark {
   background-color: var(--noche);
 }
 
@@ -411,6 +393,18 @@ header.black {
     align-items: center;
     flex-direction: row;
   }
+  header.white .right-nav .nav-links .link a {
+    color: var(--noche);
+  }
+  header.white .right-nav .nav-links .link a.active {
+    border-bottom: 2px solid var(--noche);
+  }
+  header.dark .right-nav .nav-links .link a {
+    color: var(--paz);
+  }
+  header.dark .right-nav .nav-links .link a.active {
+    border-bottom: 2px solid var(--paz);
+  }
   .right-nav {
     display: flex;
   }
@@ -434,7 +428,6 @@ header.black {
   }
   .right-nav .nav-links .link a {
     text-decoration: none;
-    color: var(--noche);
   }
   .right-nav .nav-links .link:first-child {
     margin-left: 0;
@@ -444,7 +437,6 @@ header.black {
   }
   .right-nav .nav-links .link a.active {
     font-weight: 700;
-    border-bottom: 2px solid var(--noche);
   }
   .right-nav .nav-links .link a:hover {
     font-weight: 700;
@@ -574,7 +566,7 @@ header.black {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: var(--small) 0;
+  padding: var(--spacing-small) 0;
   border-bottom: 2px solid var(--espacio);
 }
 .objectives-container .objective span {
@@ -586,10 +578,44 @@ header.black {
   padding-bottom: 0;
 }
 
+.about-objectives-container .objective-item {
+  padding: var(--spacing-medium) 0;
+  border-bottom: 2px solid var(--espacio);
+}
+.about-objectives-container .objective-item .objective {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: var(--spacing-small);
+}
+.about-objectives-container .objective-item .objective span {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.about-objectives-container :last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 /* Desktop */
 @media screen and (min-width: 1000px) {
   .objectives-container {
     margin-top: var(--spacing-xxlarge);
+  }
+  .about-objectives-container {
+    grid-column: 1/13;
+  }
+  .about-objectives-container .objective-item {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .about-objectives-container .objective-item .objective-container {
+    grid-column: 1/6;
+  }
+  .about-objectives-container .objective-item .desc {
+    grid-column: 6/13;
   }
 }
 footer {
@@ -617,13 +643,25 @@ footer .common-links .socials .twitter-logo {
   margin-right: 1.5rem;
 }
 
+/* Dektop */
+@media screen and (min-width: 1000px) {
+  .internal-title-container {
+    grid-column: 1/7;
+  }
+  .subtitle-container {
+    grid-column: 1/13;
+  }
+  .form {
+    grid-column: 1/7;
+  }
+}
 :root {
   --spacing-xsmall: 0.5rem;
   --spacing-small: 1rem;
   --spacing-medium: 1.5rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 2.5rem;
-  --spacing-xxlrge: 3rem;
+  --spacing-xxlarge: 3rem;
   --spacing-xxxlarge: 3.5rem;
   --spacing-xxxxlarge: 3rem;
 }
@@ -636,12 +674,26 @@ footer .common-links .socials .twitter-logo {
   padding-top: calc(var(--spacing-xxxlarge) - 1.5rem);
 }
 
+.padding-internal-title {
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-xxlarge);
+}
+
+.padding-internal-section {
+  padding-top: var(--spacing-xlarge);
+  padding-bottom: var(--spacing-xxxlarge);
+}
+
 .margin-top-xlarge {
   margin-top: var(--spacing-xlarge);
 }
 
 .margin-top-small {
   margin-top: var(--spacing-small);
+}
+
+.margin-top-medium {
+  margin-top: var(--spacing-medium);
 }
 
 /* Tablet */

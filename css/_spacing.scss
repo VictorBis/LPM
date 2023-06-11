@@ -4,7 +4,7 @@
     --spacing-medium: 1.5rem;
     --spacing-large: 2rem;
     --spacing-xlarge: 2.5rem;
-    --spacing-xxlrge: 3rem;
+    --spacing-xxlarge: 3rem;
     --spacing-xxxlarge: 3.5rem;
     --spacing-xxxxlarge: 3rem;
   }
@@ -17,12 +17,27 @@
     }
   }
 
+  .padding-internal-title{
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-xxlarge);
+  }
+
+  .padding-internal-section{
+    padding-top: var(--spacing-xlarge);
+    padding-bottom: var(--spacing-xxxlarge);
+  }
+
+
   .margin-top-xlarge{
     margin-top: var(--spacing-xlarge);
   }
 
   .margin-top-small{
     margin-top: var(--spacing-small);
+  }
+
+  .margin-top-medium{
+    margin-top: var(--spacing-medium);
   }
 
    /* Tablet */

@@ -22,22 +22,6 @@ a{
     }
 }
 
-.primary-btn-alt{
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 1rem 1.5rem;
-    background-color: var(--paz);
-    color: var(--noche);
-    text-decoration: none;
-    border-radius: 40px;
-    margin-top: var(--spacing-medium);
-    width: fit-content;
-    &:hover{
-        background-color: var(--niebla);
-        color: var(--noche);
-    }
-}
-
 .secondary-btn{
     font-size: 1rem;
     font-weight: 700;

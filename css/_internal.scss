@@ -1,0 +1,14 @@
+/* Dektop */
+@media screen and (min-width: 1000px){
+    .internal-title-container{
+        grid-column: 1/7;
+    }
+
+    .subtitle-container{
+        grid-column: 1/13;
+    }
+
+    .form{
+        grid-column: 1/7;
+    }
+}
