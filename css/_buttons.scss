@@ -42,7 +42,7 @@ a{
     font-weight: 700;
     text-decoration: none;
     color: var(--noche);
-    --shift-distance: 0.1rem;
+    --shift-distance: 0.11rem;
     display: inline-block;
     position: relative;
     padding-right: 2rem;
@@ -50,6 +50,8 @@ a{
     z-index: 1;
     transition: color .15s ease-in-out,transform .3s ease;
     border-radius: 2em;
+    margin-top: var(--medium);
+    width: fit-content;
     &:hover{
         color: var(--noche);
         background-color: var(--vida);

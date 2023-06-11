@@ -19,7 +19,7 @@
 }
 
 /* Dektop */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
     .section{
         padding: 0;
         max-width: 1120px;
@@ -34,5 +34,11 @@
         & .half-column-2{
             grid-column: 7/13;
         }
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width:1200px){
+    .section{
+        padding: 0 2rem;
     }
 }

@@ -92,7 +92,7 @@ a {
 }
 
 /* Dektop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   :root {
     --large: 2rem;
     --xlarge: 2.5rem;
@@ -162,7 +162,7 @@ a:hover {
   font-weight: 700;
   text-decoration: none;
   color: var(--noche);
-  --shift-distance: 0.1rem;
+  --shift-distance: 0.11rem;
   display: inline-block;
   position: relative;
   padding-right: 2rem;
@@ -170,6 +170,9 @@ a:hover {
   z-index: 1;
   transition: color 0.15s ease-in-out, transform 0.3s ease;
   border-radius: 2em;
+  margin-top: var(--medium);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .ghost:hover {
   color: var(--noche);
@@ -236,11 +239,13 @@ a:hover {
 .hero-img .img-container img {
   max-width: 255px;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Tablet */
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .hero-title {
     height: 100%;
     justify-content: center;
@@ -278,7 +283,7 @@ a:hover {
   }
 }
 /* Dektop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .event-banner {
     max-width: 1440px;
     padding: 1.5rem 4rem;
@@ -314,7 +319,7 @@ header.black {
 }
 
 /* Mobile nav*/
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 599px) {
   .navbar {
     padding: 1rem;
     display: flex;
@@ -374,7 +379,7 @@ header.black {
   }
 }
 /* Tablet */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .navbar {
     padding: 1rem;
     display: flex;
@@ -422,17 +427,23 @@ header.black {
     transition: all 0.5s;
   }
 }
+/* Tablet */
 @media screen and (min-width: 760px) {
   .navbar {
     padding: 1.5rem;
   }
 }
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .navbar {
     padding: 1.5rem 0;
     max-width: 1120px;
     margin: auto;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .navbar {
+    padding: 1.5rem 2rem;
   }
 }
 .section-container.gray {
@@ -453,7 +464,7 @@ header.black {
   }
 }
 /* Dektop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .section {
     padding: 0;
     max-width: 1120px;
@@ -467,6 +478,53 @@ header.black {
   }
   .section .half-column-2 {
     grid-column: 7/13;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .section {
+    padding: 0 2rem;
+  }
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.5rem;
+  margin-top: var(--spacing-large);
+}
+.cards-container .card {
+  padding: 1.5rem;
+  box-shadow: inset 0px 0px 0px 2px var(--noche);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.cards-container .card .card-title {
+  padding-top: var(--spacing-xsmall);
+  flex-grow: 1;
+}
+.cards-container .card .event-content {
+  padding-top: var(--spacing-xsmall);
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .cards-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .cards-container :first-child {
+    grid-column: 1/5;
+  }
+  .cards-container :nth-child(2) {
+    grid-column: 5/9;
+  }
+  .cards-container :last-child {
+    grid-column: 1/9;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1080px) {
+  .cards-container {
+    margin-top: 0;
   }
 }
 :root {
@@ -494,7 +552,7 @@ header.black {
 
 /* Tablet */
 /* Dektop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   :root {
     --spacing-xlarge: 3rem;
     --spacing-xxlarge: 3.5rem;

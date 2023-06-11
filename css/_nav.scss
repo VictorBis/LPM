@@ -30,7 +30,7 @@ header {
 }
   
   /* Mobile nav*/
-  @media screen and (max-width: 549px) {
+  @media screen and (max-width: 599px) {
     .navbar {
       padding: 1rem;
       display: flex;
@@ -101,7 +101,7 @@ header {
 
 
   /* Tablet */
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 600px) {
     .navbar {
       padding: 1rem;
       display: flex;
@@ -156,17 +156,25 @@ header {
 
   }
 
-  @media screen and (min-width: 760px) {
+
+/* Tablet */
+@media screen and (min-width: 760px) {
     .navbar {
       padding: 1.5rem;
     }
-  }
+}
   
   /* Desktop */
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1000px) {
     .navbar {
       padding: 1.5rem 0;
       max-width: 1120px;
       margin: auto;
     }
   }
+
+  @media screen and (min-width: 900px) and (max-width:1200px){
+    .navbar{
+        padding: 1.5rem 2rem;
+    }
+}
