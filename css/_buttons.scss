@@ -8,6 +8,35 @@ a{
 }
 
 /* Botones */
+.primary-btn{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    background-color: var(--noche);
+    color: var(--paz);
+    text-decoration: none;
+    border-radius: 40px;
+    &:hover{
+        background-color: var(--grafito);
+        color: var(--paz);
+    }
+}
+
+.secondary-btn{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    background-color: var(--paz);
+    color: var(--noche);
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow:inset 0px 0px 0px 2px var(--noche);
+    &:hover{
+        background-color: var(--niebla);
+        color: var(--noche);
+    }
+}
+
 
 .ghost{
     font-weight: 700;
@@ -49,4 +78,9 @@ a{
         background-color: var(--vida);
         transition: left .3s cubic-bezier(.34,1.2,.64,1),right .3s ease,background-position .3s ease;
     }
+}
+
+
+ /* Tablet */
+@media screen and (min-width: 760px){
 }

@@ -9,6 +9,14 @@
     --spacing-xxxxlarge: 2.5rem;
   }
   
+  .padding-xxxxlarge{
+    padding-top: var(--spacing-xxxxlarge);
+    padding-bottom: var(--spacing-xxxxlarge);
+  }
+
+  .margin-top-xlarge{
+    margin-top: var(--spacing-xlarge);
+  }
   
    /* Tablet */
   @media screen and (min-width: 760px){

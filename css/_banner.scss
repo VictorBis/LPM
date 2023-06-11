@@ -1,10 +1,10 @@
 .event-banner-container{
     background-color: var(--pistache);
+    /*display: none;*/
 }
 
 .event-banner{
     padding: 1rem;
-    background-color: var(--pistache);
     & a{
         margin-top: 0.5rem;
     }
@@ -24,4 +24,4 @@
         padding: 1.5rem 4rem;
         margin: 0 auto;
     }
-  }
+}

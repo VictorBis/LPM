@@ -78,10 +78,6 @@ a{
   line-height: 1.5;
 }
 
- /* Tablet */
-@media screen and (min-width: 760px){
-}
-
 /* Dektop */
 @media screen and (min-width: 1200px){
   :root{
@@ -91,6 +87,6 @@ a{
   }
 
   .xxlarge{
-    line-height: 0.85;
+    line-height: 0.9;
   }
 }

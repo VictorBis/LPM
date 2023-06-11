@@ -1,0 +1,38 @@
+.section-container{
+    &.gray{
+        background-color: var(--niebla);
+    }
+    &.dark{
+        background-color: var(--noche);
+    }
+}
+
+.section{
+    padding: 1rem;
+}
+
+ /* Tablet */
+ @media screen and (min-width: 760px){
+    .section{
+        padding: 1.5rem;
+    }
+}
+
+/* Dektop */
+@media screen and (min-width: 1200px){
+    .section{
+        padding: 0;
+        max-width: 1120px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+
+        & .half-column-1{
+            grid-column: 1/7;
+        }
+        & .half-column-2{
+            grid-column: 7/13;
+        }
+    }
+}
