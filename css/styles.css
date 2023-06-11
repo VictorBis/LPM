@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 0 1rem;
 }
 
 :root {
@@ -84,6 +85,12 @@ body {
   font-size: var(--xxlarge);
 }
 
+a {
+  font-family: "Helvetica", sans-serif;
+  font-size: var(--body);
+  line-height: 1.5;
+}
+
 /* Tablet */
 /* Dektop */
 @media screen and (min-width: 1200px) {
@@ -105,6 +112,8 @@ body {
   --pistache: #E4E59E;
   --espacio: #E5E5E4;
   --grafito: #4E4D51;
+  --cielo: #0055D3;
+  --dignidad: #0041A3;
 }
 
 body {
@@ -133,6 +142,63 @@ body {
     --spacing-xxxxlarge: 6.5rem;
   }
 }
+/* Links */
+a {
+  color: var(--cielo);
+}
+a:hover {
+  color: var(--dignidad);
+}
+a:visited {
+  color: var(--cielo);
+}
+
+/* Botones */
+.ghost {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--noche);
+  --shift-distance: 0.1rem;
+  display: inline-block;
+  position: relative;
+  padding-right: 2rem;
+  transform: translateX(0);
+  z-index: 1;
+  transition: color 0.15s ease-in-out, transform 0.3s ease;
+  border-radius: 2em;
+}
+.ghost:hover {
+  color: var(--noche);
+  background-color: var(--vida);
+  transform: translateX(var(--shift-distance));
+}
+.ghost:hover::before {
+  height: 100%;
+  left: calc(var(--shift-distance) * -4.5);
+  transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease, background-position 0.3s ease;
+}
+.ghost:visited {
+  color: var(--noche);
+}
+.ghost::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: calc(100% - 1.5rem);
+  border-radius: 1rem;
+  height: 1.5rem;
+  z-index: -1;
+  background-image: url(/img/Icons/Flecha.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 1.5rem;
+  background-color: var(--vida);
+  transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s ease, background-position 0.3s ease;
+}
+
 .hero {
   padding: 1.5rem;
   height: 100vh;

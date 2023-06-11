@@ -1,0 +1,58 @@
+/* Links */
+
+a{
+    color: var(--cielo);
+    &:hover{
+        color: var(--dignidad);
+    }
+    &:visited{
+        color: var(--cielo);   
+    }
+}
+
+/* Botones */
+
+.ghost{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--noche);
+    --shift-distance: 0.1rem;
+    display: inline-block;
+    position: relative;
+    padding-right: 2rem;
+    transform: translateX(0);
+    z-index: 1;
+    transition: color .15s ease-in-out,transform .3s ease;
+    border-radius: 2em;
+    &:hover{
+        color: var(--noche);
+        background-color: var(--vida);
+        transform: translateX(var(--shift-distance));
+        &::before{
+            height: 100%;
+            left: calc(var(--shift-distance)*-4.5);
+            transition: left .3s cubic-bezier(.4,1.7,.7,.8),right .3s ease,background-position .3s ease;
+        }
+    }
+    &:visited{
+        color: var(--noche);
+    }
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: calc(100% - 1.5rem);
+        border-radius: 1rem;
+        height: 1.5rem;
+        z-index: -1;
+        background-image: url(/img/Icons/Flecha.svg);
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-size: 1.5rem;
+        background-color: var(--vida);
+        transition: left .3s cubic-bezier(.34,1.2,.64,1),right .3s ease,background-position .3s ease;
+    }
+}
