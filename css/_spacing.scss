@@ -12,12 +12,15 @@
   .padding-xxxxlarge{
     padding-top: var(--spacing-xxxxlarge);
     padding-bottom: var(--spacing-xxxxlarge);
+    &.hero{
+        padding-top: calc(var(--spacing-xxxlarge) - 1.5rem);
+    }
   }
 
   .margin-top-xlarge{
     margin-top: var(--spacing-xlarge);
   }
-  
+
    /* Tablet */
   @media screen and (min-width: 760px){
   }
@@ -30,4 +33,11 @@
       --spacing-xxxlarge: 4rem;
       --spacing-xxxxlarge: 6.5rem;
     }
+
+    .padding-xxxxlarge{
+        &.hero{
+            padding-top: var(--spacing-xxxlarge);
+            padding-bottom: calc(var(--spacing-xxxlarge) + 6rem);
+        }
+      }
   }
