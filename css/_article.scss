@@ -1,0 +1,40 @@
+.article-container{
+    width: 100%;
+    .img-container{
+        width: 100%;
+        margin-bottom: var(--spacing-medium);
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+ /* Tablet */
+ @media screen and (min-width: 760px){
+    .article-container{
+        .img-container{
+            width: 60%;
+            margin: auto;
+            margin-bottom: var(--spacing-medium);
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+/* Dektop */
+@media screen and (min-width: 1000px){
+    .article-container{
+        grid-column: 4/10;
+    }
+
+    .article-container{
+        .img-container{
+            width: 100%;
+        }
+    }
+}

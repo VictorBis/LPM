@@ -869,6 +869,39 @@ footer .common-links .socials .twitter-logo {
     margin-top: 0;
   }
 }
+.article-container {
+  width: 100%;
+}
+.article-container .img-container {
+  width: 100%;
+  margin-bottom: var(--spacing-medium);
+}
+.article-container .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .article-container .img-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: var(--spacing-medium);
+  }
+  .article-container .img-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Dektop */
+@media screen and (min-width: 1000px) {
+  .article-container {
+    grid-column: 4/10;
+  }
+  .article-container .img-container {
+    width: 100%;
+  }
+}
 :root {
   --spacing-xsmall: 0.5rem;
   --spacing-small: 1rem;
