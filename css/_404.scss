@@ -1,0 +1,30 @@
+.internal-404-section-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h1,p{
+            text-align: center;
+        }
+    }
+    & .img-container{
+        margin-top: var(--spacing-xxxlarge);
+        width: 100%;
+        text-align: center;
+        & img{
+            max-width: 100%;
+        }
+    }
+}
+
+/* Dektop */
+@media screen and (min-width: 1000px){
+    .internal-404-section-container{
+        grid-column: 4/10;
+    }
+}

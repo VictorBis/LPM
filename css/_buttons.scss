@@ -31,6 +31,7 @@ a{
     text-decoration: none;
     border-radius: 40px;
     box-shadow:inset 0px 0px 0px 2px var(--noche);
+    width: fit-content;
     &:hover{
         background-color: var(--niebla);
         color: var(--noche);
