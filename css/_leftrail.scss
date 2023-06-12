@@ -95,6 +95,7 @@
     border-right: 5px solid transparent;
     border-top: 6px solid var(--noche);
     transition: 0.3s;
+    margin-left: 0.5rem;
   }
   
   
@@ -116,7 +117,7 @@
     opacity: 0;
     display: none;
     transition: 0.2s;
-    z-index: 1;
+    z-index: 3;
   }
   
   .menu li {
@@ -125,6 +126,12 @@
     font-family: 'Helvetica', sans-serif;
     padding: 1rem;
     cursor: pointer;
+    & a{
+        color: var(--noche);
+        text-decoration: none;
+        width: 100%;
+        display: block;
+    }
   }
   
   .menu li:hover {

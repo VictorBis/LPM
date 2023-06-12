@@ -12,17 +12,4 @@ select.addEventListener('click', () => {
   caret.classList.toggle('caret-rotate');
   menu.classList.toggle('menu-open');
 });
-
-options.forEach(option => {
-  option.addEventListener('click', () => {
-      select.classList.remove('select-clicked');
-      caret.classList.remove('caret-rotate');
-      menu.classList.remove('menu-open');
-    
-      options.forEach(option => {
-        option.classList.remove('active');
-        });
-          option.classList.add('active');
-  });
-});
 });
