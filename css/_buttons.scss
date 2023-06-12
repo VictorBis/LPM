@@ -80,6 +80,11 @@ a{
         background-color: var(--vida);
         transition: left .3s cubic-bezier(.34,1.2,.64,1),right .3s ease,background-position .3s ease;
     }
+    &.pdf{
+        &::before{
+            background-image: url(/img/Icons/PDF.svg);
+        }
+    }
 }
 
 

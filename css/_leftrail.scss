@@ -1,0 +1,93 @@
+ .resources-cards-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.5rem;
+    margin-top: var(--spacing-small);
+    & .card{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: var(--niebla);
+        border-radius: 8px;
+        & .img-container{
+            width: 100%;
+            height: 176px;
+            margin-bottom: var(--spacing-small);
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        & .title-container{
+            display: flex;
+            flex-direction: column;
+            & h2{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+            & .label{
+                margin-top: var(--spacing-xsmall);
+                padding: 0.25rem 0.5rem;
+                border-radius: 4px;
+                width: fit-content;
+                &.libro{
+                    background-color: #CF3131;
+                    color: #ffffff;
+                }
+                &.seminario{
+                    background-color: #315DCF;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+ }
+
+
+ /* Tablet */
+ @media screen and (min-width: 760px){
+    .resources-cards-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        & .card{
+            & .title-container{
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+    .left-rail{
+        grid-column: 1/3;
+        & .options{
+            display: flex;
+            flex-direction: column;
+            & .leftr-option{
+                padding: var(--spacing-small) 0;
+                border-bottom: 2px solid var(--espacio);
+                color: var(--noche);
+                text-decoration: none;
+                &.active{
+                    font-weight: 700;
+                    border-bottom: 2px solid var(--noche);
+                }
+                &:hover{
+                    color: var(--grafito);
+                    font-weight: 700;
+                    border-bottom: 2px solid var(--grafito);
+                }
+            }
+        }
+    }
+
+    .resources-cards-container{
+        grid-column: 3/13;
+        margin-top: 0;
+    }
+}
