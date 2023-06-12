@@ -37,9 +37,6 @@ header {
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
-      &.bg-white {
-        background-color: var(--paz);
-      }
     }
 
     .mobile-nav-trigger{
@@ -48,39 +45,56 @@ header {
 
       & span{
         font-size: 2.5rem;
+        color: var(--paz);
+        &.paz-color{
+            color: var(--noche);
+        }
       }
     }
 
     .mobile-nav{
       display: flex;
       flex-direction: column;
+      align-items: center;
       padding: 0 1rem 1.5rem 1rem;
-      background-color: var(--paz);
+      background-color: var(--niebla);
       animation: fadeIn 0.3s;
+      border-bottom: 2px solid var(--noche);
+      & .nav-links{
+        width: 100%;
+      }
       & li{
         padding: 1.5rem 0;
-        border-bottom: 1px solid  var(--espacio);
+        border-bottom: 2px solid  var(--espacio);
+        list-style: none;
 
         & a{
           color: var(--noche);
           display: inline-block;
           width: 100%;
+          text-decoration: none
+        }
+
+        & .active{
+            font-weight: bold;
         }
       }
 
-      & .top-btn{
+      & .menu-btn{
         margin-top: 1.5rem;
-        border-radius: 0.5rem;
-        width: 100%;
-        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem 1.5rem;
         background-color: var(--paz);
-        color: var(--pistache);
-        padding: 1rem 2rem;
-
+        color: var(--noche);
+        text-decoration: none;
+        border-radius: 40px;
+        box-shadow:inset 0px 0px 0px 2px var(--noche);
+        text-align: center;
         &:hover{
-          background-color: var(--grafito);
-          color: var(--pistache);
-        }
+        background-color: var(--niebla);
+        color: var(--noche);
+    }
       }
 
       &.collapsed{
