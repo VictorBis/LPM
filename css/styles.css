@@ -882,6 +882,14 @@ footer .common-links .socials .twitter-logo {
   width: 100%;
   height: auto;
 }
+.article-container .fb-video {
+  margin-bottom: none;
+  margin-top: var(--spacing-medium);
+  width: 100%;
+}
+.article-container .fb-video iframe {
+  height: 200px;
+}
 
 /* Tablet */
 @media screen and (min-width: 760px) {
@@ -893,6 +901,13 @@ footer .common-links .socials .twitter-logo {
   .article-container .img-container img {
     width: 100%;
     height: auto;
+  }
+  .article-container .fb-video {
+    margin-bottom: none;
+    margin-top: var(--spacing-large);
+  }
+  .article-container .fb-video iframe {
+    height: 260px;
   }
 }
 /* Dektop */
@@ -968,6 +983,10 @@ footer .common-links .socials .twitter-logo {
 
 .margin-top-small {
   margin-top: var(--spacing-small);
+}
+
+.margin-top-xsmall {
+  margin-top: var(--spacing-xsmall);
 }
 
 .margin-top-medium {
