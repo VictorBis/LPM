@@ -898,6 +898,7 @@ footer .common-links .socials .twitter-logo {
   .resources-cards-container .card .img-container img {
     -o-object-fit: fill;
        object-fit: fill;
+    width: 150px;
   }
 }
 .article-container {
