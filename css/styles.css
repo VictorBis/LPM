@@ -721,7 +721,7 @@ footer .common-links .socials .twitter-logo {
 .resources-cards-container .card .title-container h2 {
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -881,6 +881,23 @@ footer .common-links .socials .twitter-logo {
   .resources-cards-container {
     grid-column: 3/13;
     margin-top: 0;
+    grid-auto-rows: max-content;
+  }
+  .resources-cards-container .card {
+    flex-direction: row;
+  }
+  .resources-cards-container .card .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .resources-cards-container .card .img-container {
+    max-width: 150px;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  .resources-cards-container .card .img-container img {
+    -o-object-fit: fill;
+       object-fit: fill;
   }
 }
 .article-container {
