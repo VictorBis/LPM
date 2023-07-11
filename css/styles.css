@@ -319,7 +319,7 @@ header.white {
   background-color: var(--paz);
 }
 header.dark {
-  background-color: var(--noche);
+  background-color: var(--niebla);
 }
 
 .navbar {
@@ -355,7 +355,7 @@ header.dark {
   }
   .mobile-nav-trigger span {
     font-size: 2.5rem;
-    color: var(--paz);
+    color: var(--noche);
   }
   .mobile-nav-trigger span.paz-color {
     color: var(--noche);
@@ -430,10 +430,10 @@ header.dark {
     border-bottom: 2px solid var(--noche);
   }
   header.dark .right-nav .nav-links .link a {
-    color: var(--paz);
+    color: var(--noche);
   }
   header.dark .right-nav .nav-links .link a.active {
-    border-bottom: 2px solid var(--paz);
+    border-bottom: 2px solid var(--noche);
   }
   .right-nav {
     display: flex;

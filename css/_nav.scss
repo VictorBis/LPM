@@ -4,7 +4,7 @@ header {
         background-color: var(--paz);
     }
     &.dark{
-        background-color: var(--noche);
+        background-color: var(--niebla);
     }
   }
   
@@ -45,7 +45,7 @@ header {
 
       & span{
         font-size: 2.5rem;
-        color: var(--paz);
+        color: var(--noche);
         &.paz-color{
             color: var(--noche);
         }
@@ -144,10 +144,10 @@ header {
                 & .nav-links{
                     & .link{
                         & a{
-                            color: var(--paz);
+                            color: var(--noche);
                         }
                         & a.active{
-                            border-bottom: 2px solid var(--paz);
+                            border-bottom: 2px solid var(--noche);
                         }
                     }
                 }
