@@ -1,9 +1,10 @@
 footer{
     padding: var(--spacing-large) 1rem;
-    background-color: var(--niebla);
+    background-color: var(--paz);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid var(--espacio);
 
     & .common-links{
         display: flex;
