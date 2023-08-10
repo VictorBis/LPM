@@ -52,6 +52,13 @@
                 }
             }
         }
+        &.video{
+            padding: 0;
+            height: 12rem;
+            & iframe{
+                border-radius: 8px;
+            }
+        }
     }
  }
 
@@ -165,6 +172,9 @@
         & .card{
             & .title-container{
                 flex-grow: 1;
+            }
+            &.video{
+                height: 13rem;
             }
         }
     }

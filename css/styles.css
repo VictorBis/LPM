@@ -745,6 +745,13 @@ footer .common-links .socials .twitter-logo {
   background-color: #7731CF;
   color: #ffffff;
 }
+.resources-cards-container .card.video {
+  padding: 0;
+  height: 12rem;
+}
+.resources-cards-container .card.video iframe {
+  border-radius: 8px;
+}
 
 .left-rail .options {
   display: none;
@@ -850,6 +857,9 @@ footer .common-links .socials .twitter-logo {
   }
   .resources-cards-container .card .title-container {
     flex-grow: 1;
+  }
+  .resources-cards-container .card.video {
+    height: 13rem;
   }
 }
 /* Desktop */
