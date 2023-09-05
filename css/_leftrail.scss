@@ -22,6 +22,10 @@
             & .cover{
                 object-fit: cover;
             }
+            & .desclab{
+                object-fit: contain;
+                background-color: white;
+            }
         }
         & .title-container{
             display: flex;
