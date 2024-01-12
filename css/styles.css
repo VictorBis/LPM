@@ -720,6 +720,11 @@ footer .common-links .socials .twitter-logo {
      object-fit: contain;
   background-color: white;
 }
+.resources-cards-container .card .img-container .elcomercio {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #FFCB05;
+}
 .resources-cards-container .card .title-container {
   display: flex;
   flex-direction: column;
