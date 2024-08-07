@@ -21,6 +21,9 @@
             }
             & .cover{
                 object-fit: cover;
+                &.top{
+                    object-position: top;
+                }
             }
             & .desclab{
                 object-fit: contain;
