@@ -24,6 +24,9 @@
                 &.top{
                     object-position: top;
                 }
+                &.left{
+                    object-position: left;
+                }
             }
             & .desclab{
                 object-fit: contain;

@@ -719,6 +719,10 @@ footer .common-links .socials .twitter-logo {
   -o-object-position: top;
      object-position: top;
 }
+.resources-cards-container .card .img-container .cover.left {
+  -o-object-position: left;
+     object-position: left;
+}
 .resources-cards-container .card .img-container .desclab {
   -o-object-fit: contain;
      object-fit: contain;
