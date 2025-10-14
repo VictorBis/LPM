@@ -276,7 +276,12 @@ a:hover {
   }
   .hero-img .img-container {
     margin-top: 0;
-    grid-column: 2/6;
+  }
+  .hero-img .img-container.img-1 {
+    grid-column: 1/4;
+  }
+  .hero-img .img-container.img-2 {
+    grid-column: 4/7;
   }
   .hero-img .img-container img {
     max-width: 100%;
