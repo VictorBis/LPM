@@ -122,6 +122,7 @@ a {
   --grafito: #4E4D51;
   --cielo: #0055D3;
   --dignidad: #0041A3;
+  --vida-light: rgba(228, 229, 158, 0.3);
 }
 
 body {
@@ -142,14 +143,14 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem 1.5rem;
-  background-color: var(--noche);
-  color: var(--paz);
+  background-color: var(--vida);
+  color: var(--noche);
   text-decoration: none;
   border-radius: 40px;
 }
 .primary-btn:hover {
-  background-color: var(--grafito);
-  color: var(--paz);
+  background-color: var(--pistache);
+  color: var(--noche);
 }
 
 .secondary-btn {
@@ -160,7 +161,7 @@ a:hover {
   color: var(--noche);
   text-decoration: none;
   border-radius: 40px;
-  box-shadow: inset 0px 0px 0px 2px var(--noche);
+  box-shadow: inset 0px 0px 0px 2px var(--vida);
   width: -moz-fit-content;
   width: fit-content;
 }

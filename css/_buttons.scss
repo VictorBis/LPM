@@ -12,13 +12,13 @@ a{
     font-size: 1rem;
     font-weight: 700;
     padding: 1rem 1.5rem;
-    background-color: var(--noche);
-    color: var(--paz);
+    background-color: var(--vida);
+    color: var(--noche);
     text-decoration: none;
     border-radius: 40px;
     &:hover{
-        background-color: var(--grafito);
-        color: var(--paz);
+        background-color: var(--pistache);
+        color: var(--noche);
     }
 }
 
@@ -30,7 +30,7 @@ a{
     color: var(--noche);
     text-decoration: none;
     border-radius: 40px;
-    box-shadow:inset 0px 0px 0px 2px var(--noche);
+    box-shadow:inset 0px 0px 0px 2px var(--vida);
     width: fit-content;
     &:hover{
         background-color: var(--niebla);
