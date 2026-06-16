@@ -53,6 +53,22 @@
         }
     }
     
+.asset {
+    width: 100%;
+    height: 24rem; /* Ajusta la altura que quieras */
+    overflow: hidden;
+}
+
+.asset img,
+.asset video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* o contain, según prefieras */
+    border-radius: 16px;
+    border: 2px solid black;
+    display: block;
+}
+
 /* Tablet */
 @media screen and (min-width: 560px){
     .hero-img{
