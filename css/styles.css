@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
 * {
   padding: 0;
@@ -285,6 +286,23 @@ a:hover {
   margin-right: 1.5rem;
 }
 
+.asset {
+  width: 100%;
+  height: 24rem; /* Ajusta la altura que quieras */
+  overflow: hidden;
+}
+
+.asset img,
+.asset video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* o contain, según prefieras */
+  border-radius: 16px;
+  border: 2px solid black;
+  display: block;
+}
+
 /* Tablet */
 @media screen and (min-width: 560px) {
   .hero-img .img-container img {
@@ -566,6 +584,12 @@ header.dark {
     gap: 1.5rem;
     margin-top: 2rem;
   }
+  .three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
 }
 /* Tablet */
 @media screen and (max-width: 500px) {
@@ -577,6 +601,12 @@ header.dark {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin-top: 2rem;
+  }
+  .three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
     margin-top: 2rem;
   }
 }
@@ -591,13 +621,19 @@ header.dark {
     gap: 1.5rem;
   }
   .section .half-column-1 {
-    grid-column: 1/7;
+    grid-column: 1/13;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .section .half-column-1 h2 {
+    text-align: center;
   }
   .section .half-column-1.hero {
     grid-column: 1/13;
   }
   .section .half-column-2 {
-    grid-column: 7/13;
+    grid-column: 1/13;
   }
   .section .half-column-2.hero {
     grid-column: 1/13;
@@ -614,6 +650,11 @@ header.dark {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -654,7 +695,7 @@ header.dark {
     grid-column: 5/9;
   }
   .cards-container :last-child {
-    grid-column: 1/9;
+    grid-column: 2/8;
   }
 }
 /* Desktop */
