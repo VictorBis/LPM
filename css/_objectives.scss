@@ -11,10 +11,6 @@
             margin-right: 1rem;
         }
     }
-    & :last-child{
-        border-bottom: none;
-        padding-bottom: 0;
-    }
 }
 
 .about-objectives-container{
@@ -42,7 +38,7 @@
 /* Desktop */
 @media screen and (min-width: 1000px) {
     .objectives-container{
-        margin-top: var(--spacing-xxlarge);
+        margin-top: var(--spacing-medium);
     }
 
     .about-objectives-container{

@@ -16,7 +16,29 @@
         & .event-content{
             padding-top: var(--spacing-xsmall);
         }
+        & img{
+            width: 100%;
+            border: 2px solid var(--noche);
+            border-radius: 8px;
+        }
+        &.img-card{
+            padding: 0;
+            box-shadow: none;
+        }
     }
+}
+
+/* Mobile */
+@media screen and (min-width: 500px){
+    .cards-container{
+        &.five-col-grid{
+            margin-top: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+            > * {
+            grid-column: auto;
+            }
+        }
+    }   
 }
 
 /* Tablet */
@@ -31,6 +53,13 @@
         }
         & :last-child{
             grid-column: 2/8;
+        }
+        &.five-col-grid{
+            margin-top: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            > * {
+            grid-column: auto;
+            }
         }
     }
 

@@ -38,7 +38,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -79,11 +79,15 @@
             display: flex;
             flex-direction: column;
             justify-self: center;
+            text-align: center;
             & h2{
                 text-align: center;
             }
             &.hero{
                 grid-column: 1/13;
+            }
+            & a{
+                align-self: center;
             }
         }
         & .half-column-2{
