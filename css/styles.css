@@ -1020,6 +1020,9 @@ footer .common-links .socials .twitter-logo {
   .resources-cards-container .card.video {
     height: 13rem;
   }
+  .resources-cards-container.resources-home {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* Desktop */
 @media screen and (min-width: 1000px) {
@@ -1190,6 +1193,10 @@ footer .common-links .socials .twitter-logo {
 
 .margin-top-medium {
   margin-top: var(--spacing-medium);
+}
+
+.margin-bottom-small {
+  margin-bottom: var(--spacing-small);
 }
 
 /* Tablet */

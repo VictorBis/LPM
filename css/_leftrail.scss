@@ -191,6 +191,9 @@
                 height: 13rem;
             }
         }
+        &.resources-home{
+            grid-template-columns: repeat(3,1fr);   
+        }
     }
 }
 
