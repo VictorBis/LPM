@@ -54,6 +54,18 @@
         
         gtag('config', 'G-62KK0M0B34');
     </script>
+    <script>
+    document.addEventListener('click', function (event) {
+        const link = event.target.closest('a');
+        if (!link) return;
+        const href = link.href;
+        if (!href || !href.toLowerCase().endsWith('.pdf')) return;
+        gtag('event', 'file_download', {
+            file_name: href.split('/').pop(),
+            file_url: href
+        });
+    });
+    </script>
 </head>
 
 <body>
