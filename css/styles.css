@@ -657,8 +657,14 @@ header.dark {
   }
   .three-column-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
+  }
+  .three-column-grid :first-child {
+    grid-column: 2/4;
+  }
+  .three-column-grid :last-child {
+    grid-column: 4/6;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
