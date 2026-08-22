@@ -94,7 +94,7 @@ main {
 .xxlarge {
   font-family: "Baskervville", serif;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   font-size: var(--xxlarge);
 }
 
@@ -113,10 +113,10 @@ a {
   :root {
     --large: 2rem;
     --xlarge: 2.5rem;
-    --xxlarge: 3.5rem;
+    --xxlarge: 3rem;
   }
   .xxlarge {
-    line-height: 0.9;
+    line-height: 1.2;
   }
 }
 /* Colors */
