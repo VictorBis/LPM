@@ -587,11 +587,14 @@ header.dark {
   .three-column-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .logo-alt {
+    justify-content: initial;
   }
 }
-/* Tablet */
+/* Mobile */
 @media screen and (max-width: 500px) {
   .section .half-column-2 {
     grid-column: 7/13;
@@ -657,8 +660,8 @@ header.dark {
   }
   .three-column-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -815,6 +818,32 @@ footer .common-links .socials .twitter-logo {
   margin-right: 1.5rem;
 }
 
+.logo-alt {
+  margin-right: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  color: var(--noche);
+}
+
+/* Tablet */
+@media screen and (min-width: 501px) {
+  .logo-alt {
+    justify-content: initial;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo-alt {
+    justify-content: initial;
+  }
+}
+/* Dektop */
+@media screen and (min-width: 1000px) {
+  .logo-alt {
+    justify-content: center;
+  }
+}
 /* Dektop */
 @media screen and (min-width: 1000px) {
   .internal-title-container {

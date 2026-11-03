@@ -24,3 +24,33 @@ footer{
         }
     }
 }
+
+.logo-alt{
+    margin-right: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    color: var(--noche);
+}
+
+
+ /* Tablet */
+ @media screen and (min-width: 501px){
+    .logo-alt{
+        justify-content: initial;
+    }
+}
+
+ @media screen and (max-width: 500px){
+    .logo-alt{
+        justify-content: initial;
+    }
+}
+
+/* Dektop */
+@media screen and (min-width: 1000px){
+    .logo-alt{
+        justify-content: center;
+    }
+}
